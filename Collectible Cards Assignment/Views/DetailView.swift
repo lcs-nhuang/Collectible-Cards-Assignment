@@ -62,12 +62,16 @@ Favorite Food: Apple
                     Text("Hello Kitty(ハロー・キティ), known by her full name Kitty White, is a fictional character produced by the Japanese company Sanrio.")
                 }
             }
-        }
+        }.edgesIgnoringSafeArea(.top)
+        
+        
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
+        NavigationView{
         DetailView()
+        }
     }
 }

@@ -12,6 +12,8 @@
 		BB37F7052736D28200B0CCB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB37F7042736D28200B0CCB1 /* Assets.xcassets */; };
 		BB37F7082736D28200B0CCB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB37F7072736D28200B0CCB1 /* Preview Assets.xcassets */; };
 		BB37F7102739872F00B0CCB1 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB37F70F2739872F00B0CCB1 /* DetailView.swift */; };
+		BBEADC67273AEE5600EF05BA /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEADC66273AEE5600EF05BA /* ListView.swift */; };
+		BBEADC6A273B080100EF05BA /* CollectibleCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEADC69273B080100EF05BA /* CollectibleCards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		BB37F7042736D28200B0CCB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB37F7072736D28200B0CCB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BB37F70F2739872F00B0CCB1 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		BBEADC66273AEE5600EF05BA /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		BBEADC69273B080100EF05BA /* CollectibleCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectibleCards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 				BB37F7002736D27C00B0CCB1 /* Collectible_Cards_AssignmentApp.swift */,
 				BB37F7022736D27C00B0CCB1 /* ContentView.swift */,
 				BB37F7042736D28200B0CCB1 /* Assets.xcassets */,
+				BBEADC68273B07BB00EF05BA /* Model */,
 				BB37F70E2739861100B0CCB1 /* Views */,
 				BB37F7062736D28200B0CCB1 /* Preview Content */,
 			);
@@ -74,8 +79,17 @@
 			isa = PBXGroup;
 			children = (
 				BB37F70F2739872F00B0CCB1 /* DetailView.swift */,
+				BBEADC66273AEE5600EF05BA /* ListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		BBEADC68273B07BB00EF05BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BBEADC69273B080100EF05BA /* CollectibleCards.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBEADC6A273B080100EF05BA /* CollectibleCards.swift in Sources */,
+				BBEADC67273AEE5600EF05BA /* ListView.swift in Sources */,
 				BB37F7032736D27C00B0CCB1 /* ContentView.swift in Sources */,
 				BB37F7102739872F00B0CCB1 /* DetailView.swift in Sources */,
 				BB37F7012736D27C00B0CCB1 /* Collectible_Cards_AssignmentApp.swift in Sources */,
