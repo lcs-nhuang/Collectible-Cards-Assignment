@@ -10,15 +10,16 @@ import SwiftUI
 struct ListView: View {
     var body: some View {
         List{
-            NavigationLink(destination: DetailView()){
+            ForEach(listOfCards) { currentItem in
+                NavigationLink(destination: {
+                 
+                    DetailView(item: currentItem)
+                    
+                },label: {
+                    
+                    ListCaptionView(imageName: currentItem.imageName, title: currentItem.title)
+                })
                
-            Image("HelloKitty")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 50, height: 50)
-                
-            Text("Hello Kitty")
-                        .bold()
             }
         }
         .navigationTitle("Cellectible Card")

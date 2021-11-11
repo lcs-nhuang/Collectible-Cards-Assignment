@@ -7,13 +7,15 @@
 
 import Foundation
 
-struct CollectibleCards {
+struct CollectibleCards:Identifiable {
+    let id = UUID()
     let background: String
     let imageName: String
     let informaTitle: String
     let column1: String
     let column2: String
     let bodyText: String
+    let title: String
 }
 
 let listOfCards = [
@@ -31,7 +33,8 @@ Gander:Female
 Birthplace:British
 Favorite Food: Apple
 """,
-        bodyText: "Hello Kitty(ハロー・キティ), known by her full name Kitty White, is a fictional character produced by the Japanese company Sanrio.")
+        bodyText: "Hello Kitty(ハロー・キティ), known by her full name Kitty White, is a fictional character produced by the Japanese company Sanrio.",
+        title: "Hello Kitty")
     
         ,
     
@@ -46,9 +49,10 @@ Favorite Food: Apple
                      column2: """
 Gander:Female
 Birthplace:British
-Favorite Food: Almond pound cake
+Favorite Food: Cake
 """,
-                     bodyText: "My Melody (マイメロディ, frequently known for short as My Melo, Hello Kitty‘s best friend, is a white rabbit from the Japanese characterization company Sanrio.")
+                     bodyText: "My Melody (マイメロディ, frequently known for short as My Melo, Hello Kitty‘s best friend, is a white rabbit from the Japanese characterization company Sanrio.",
+                     title: "Melody")
     
     ,
     
@@ -65,7 +69,8 @@ Gander:Female
 Birthplace:British
 Favorite Food:Meat
 """,
-                     bodyText: "Kuromi (クロミ) is My Melody's rival, who is a white rabbit or imp-like creature wearing a black jester's hat  with a pink skull on the front and a black devil's tail.")
+                     bodyText: "Kuromi (クロミ) is My Melody's rival, who is a white rabbit or imp-like creature wearing a black jester's hat  with a pink skull on the front and a black devil's tail.",
+                     title: "Kuromi")
  
     ,
     
@@ -80,9 +85,10 @@ Favorite Food:Meat
                      column2: """
 Gander:Male
 Birthplace:Clound
-Favorite Food:Cinnamon roll blue
+Favorite Food:Cake
 """,
-                     bodyText: "Cinnamoroll (シナモロール) is a Sanrio character who was born on March 6, 2001, on a cloud far up in the sky. He is a little chubby male dog.")
+                     bodyText: "Cinnamoroll (シナモロール) is a Sanrio character who was born on March 6, 2001, on a cloud far up in the sky. He is a little chubby male dog.",
+                     title: "Cinnamon")
     
     ,
     
@@ -99,7 +105,8 @@ Gander:Male
 Birthplace:British
 Favorite Food:Milk
 """,
-                     bodyText: "Pompompurin (ポムポムプリン) is a good-natured Golden Retriever dog character introduced by the Japanese company Sanrio in 1996.")
+                     bodyText: "Pompompurin (ポムポムプリン) is a good-natured Golden Retriever dog character introduced by the Japanese company Sanrio in 1996.",
+                     title: "Pompompurin")
     
     
 ]

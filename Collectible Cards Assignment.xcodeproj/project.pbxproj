@@ -14,6 +14,7 @@
 		BB37F7102739872F00B0CCB1 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB37F70F2739872F00B0CCB1 /* DetailView.swift */; };
 		BBEADC67273AEE5600EF05BA /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEADC66273AEE5600EF05BA /* ListView.swift */; };
 		BBEADC6A273B080100EF05BA /* CollectibleCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEADC69273B080100EF05BA /* CollectibleCards.swift */; };
+		BBEADC6D273C734C00EF05BA /* ListCaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEADC6C273C734C00EF05BA /* ListCaptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		BB37F70F2739872F00B0CCB1 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		BBEADC66273AEE5600EF05BA /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		BBEADC69273B080100EF05BA /* CollectibleCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectibleCards.swift; sourceTree = "<group>"; };
+		BBEADC6C273C734C00EF05BA /* ListCaptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCaptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +90,17 @@
 			isa = PBXGroup;
 			children = (
 				BBEADC69273B080100EF05BA /* CollectibleCards.swift */,
+				BBEADC6B273C714100EF05BA /* Shared */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BBEADC6B273C714100EF05BA /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BBEADC6C273C734C00EF05BA /* ListCaptionView.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBEADC6A273B080100EF05BA /* CollectibleCards.swift in Sources */,
+				BBEADC6D273C734C00EF05BA /* ListCaptionView.swift in Sources */,
 				BBEADC67273AEE5600EF05BA /* ListView.swift in Sources */,
 				BB37F7032736D27C00B0CCB1 /* ContentView.swift in Sources */,
 				BB37F7102739872F00B0CCB1 /* DetailView.swift in Sources */,
