@@ -14,52 +14,60 @@ struct DetailView: View {
     var body: some View {
         ScrollView{
             VStack {
-//           The Hole Page
+                //           The Hole Page
+                
                 ZStack{
-//               The Background and Image
+                    
+                    //               The Background and Image
                     Image(item.background)
                         .resizable()
                         .scaledToFit()
                     Image(item.imageName)
-                    .resizable()
-                    .frame(width: 180, height: 240)
+                        .resizable()
+                        .frame(width: 180, height: 240)
                 }
-                
-                HStack{
-//               The CharacterInfomation (Use spacer)
-                    Text(item.informaTitle)
-                        .fontWeight(.bold)
-                        .font(.headline)
-                    Spacer()
-                }
-                
-                VStack{
-//               Everything below Character Information
-                    Spacer()
-                    
-                HStack{
-//               Make two columns of information side by side
-                VStack(alignment: .leading){
-//               The first column of information
-                    Text (item.column1)
-        .font(Font.custom("Gill Sans", size: 17))
+                ZStack {
+                    Color(red: 198/255, green: 224/255, blue: 251/255).opacity(1)
+                    VStack {
+                        HStack{
+                            //               The CharacterInfomation (Use spacer)
+                            Text(item.informaTitle)
+                                .fontWeight(.bold)
+                                .font(.headline)
+                            
+                            Spacer()
+                        }
+                        
+                        VStack{
+                            //               Everything below Character Information
+                            Spacer()
+                            
+                            HStack{
+                                //               Make two columns of information side by side
+                                VStack(alignment: .leading){
+                                    //               The first column of information
+                                    Text (item.column1)
+                                        .font(Font.custom("Gill Sans", size: 17))
+                                }
+                                
+                                VStack(alignment: .leading){
+                                    //               The second column of information
+                                    
+                                    Text (item.column2)
+                                        .font(Font.custom("Gill Sans", size: 17))
+                                }
+                                
+                            }
+                            Spacer()
+                            Text(item.bodyText)
+                                .font(Font.custom("Avenir Next", size: 17))
+                        }
                     }
-                    
-                VStack(alignment: .leading){
-//               The second column of information
-                
-                    Text (item.column2)
-        .font(Font.custom("Gill Sans", size: 17))
-                    }
-                   
-                }
-                    Spacer()
-                    Text(item.bodyText)
-                        .font(Font.custom("Avenir Next", size: 17))
                 }
             }
-        }.edgesIgnoringSafeArea(.top)
-            
+        }
+        .edgesIgnoringSafeArea(.top)
+        
         
         
     }

@@ -11,7 +11,9 @@ import SwiftUI
 struct Collectible_Cards_AssignmentApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView{
+                ListView()
+            }
         }
     }
 }
